@@ -99,7 +99,7 @@ countBudgetBtn.addEventListener('click', function() {
         let str = confirm("Начать расчет?");
         if(str) {
             start();
-            appData.moneyPerDay = ((appData.budget - appData.expensesSum) / 30).toFixed();
+            appData.moneyPerDay = ((appData.budget - appData.expensesSum) / 30).toFixed(); 
             dayBudgetVal.textContent = appData.moneyPerDay;
             return;
         }
